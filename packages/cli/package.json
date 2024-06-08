@@ -1,0 +1,44 @@
+{
+  "name": "happly",
+  "version": "0.0.1",
+  "description": "⚡️ Happliance Generation CLI",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tcheikovski/happliance.git",
+    "directory": "packages/cli"
+  },
+  "license": "MIT",
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./cli": "./bin/happly.mjs"
+  },
+  "bin": {
+    "happly": "./bin/happly.mjs",
+    "happliance": "./bin/happly.mjs",
+    "happliance-cli": "./bin/happly.mjs"
+  },
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild"
+  },
+  "dependencies": {
+    "@happliance/pack": "workspace:*",
+    "@happliance/schema": "workspace:*",
+    "citty": "^0.1.6",
+    "consola": "^3.2.3",
+    "mlly": "^1.7.1",
+    "pathe": "^1.1.2",
+    "c12": "^1.10.0",
+    "jiti": "^1.21.3",
+    "std-env": "^3.7.0",
+    "pkg-types": "^1.1.1"
+  },
+  "devDependencies": {
+    "unbuild": "^2.0.0"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "name": "happliance",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tcheikovski/happliance.git",
+    "directory": "packages/happliance"
+  },
+  "license": "MIT",
+  "type": "module",
+  "types": "./types.d.ts",
+  "exports": {
+    ".": {
+      "types": "./types.d.mts",
+      "import": "./dist/index.mjs"
+    },
+    "./config": {
+      "types": "./config.d.ts",
+      "import": "./config.js",
+      "require": "./config.cjs"
+    },
+    "./schema": {
+      "types": "./schema.d.ts",
+      "import": "./schema.js"
+    },
+    "./pack": {
+      "types": "./pack.d.ts",
+      "import": "./pack.js"
+    },
+    "./app": {
+      "types": "./dist/app/index.d.ts",
+      "import": "./dist/app/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "happly": "bin/happliance.mjs",
+    "happliance": "bin/happliance.mjs"
+  },
+  "files": [
+    "app.d.ts",
+    "bin",
+    "dist",
+    "types.d.ts",
+    "types.d.mts",
+    "config.*",
+    "pack.*",
+    "schema.*"
+  ],
+  "scripts": {
+    "build": "unbuild"
+  },
+  "dependencies": {
+    "@happliance/pack": "workspace:*",
+    "@happliance/schema": "workspace:*",
+    "c12": "^1.10.0",
+    "defu": "^6.1.4",
+    "happly": "workspace:*",
+    "hookable": "^5.5.3",
+    "mlly": "^1.7.1",
+    "pathe": "^1.1.2",
+    "pkg-types": "^1.1.1",
+    "ufo": "^1.5.3",
+    "untyped": "^1.4.2"
+  },
+  "devDependencies": {
+    "unbuild": "^2.0.0"
+  }
+}

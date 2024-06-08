@@ -1,0 +1,14 @@
+{
+  "name": "playground",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "happly prepare"
+  },
+  "dependencies": {
+    "happliance": "workspace:*"
+  },
+  "devDependencies": {
+    "unbuild": "^2.0.0"
+  }
+}

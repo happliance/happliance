@@ -1,0 +1,50 @@
+{
+  "name": "@happliance/pack",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tcheikovski/happliance.git",
+    "directory": "packages/pack"
+  },
+  "license": "MIT",
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": [
+        "./dist/index.d.mts",
+        "./dist/index.d.ts"
+      ],
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild"
+  },
+  "dependencies": {
+    "@happliance/schema": "workspace:*",
+    "@types/semver": "^7.5.8",
+    "c12": "^1.10.0",
+    "consola": "^3.2.3",
+    "defu": "^6.1.4",
+    "globby": "^14.0.1",
+    "hash-sum": "^2.0.0",
+    "ignore": "^5.3.1",
+    "mlly": "^1.7.1",
+    "pathe": "^1.1.2",
+    "pkg-types": "^1.1.1",
+    "semver": "^7.6.2",
+    "ufo": "^1.5.3",
+    "unctx": "^2.3.1",
+    "untyped": "^1.4.2"
+  },
+  "devDependencies": {
+    "@types/hash-sum": "^1.0.2",
+    "unbuild": "^2.0.0"
+  }
+}
